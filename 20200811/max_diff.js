@@ -1,8 +1,7 @@
 function maxDiff(list) {
-  let arr = list.sort((a, b) => a - b);
-
-    return arr[arr.length - 1] - arr[0];
+  if (list.length < 2) {
+    return 0;
   }
-
-
-
+  list.sort((a, b) => a - b);
+  return list[list.length - 1] - list[0];
+}
