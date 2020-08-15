@@ -26,4 +26,4 @@ function getStrings(city) {
   return res.join(',');
 }
 
-console.log(getStrings('Las Vages'));
+console.log(getStrings('Las Vegas'));
