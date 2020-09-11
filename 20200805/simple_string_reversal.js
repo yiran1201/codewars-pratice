@@ -11,3 +11,4 @@ function solve(str) {
   }
   return res.join('')
 }
+
