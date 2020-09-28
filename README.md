@@ -11,3 +11,15 @@
  'abvabvabcabcabc'.match(new RegExp('abv', 'gi'))
 [ 'abv', 'abv' ]
 ```
+
+
+```js
+/^(\d{4}|\d{6})$/.test(pin)
+```
+
+- regex 一般包在/.../里面
+- ^指match开头
+- $ 指match结尾
+- 括号里面（条件一|条件二）指满足其中一个条件
+- \d指全部数字
+- \d{4}指exactly match4个数字
