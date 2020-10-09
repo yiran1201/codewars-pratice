@@ -8,4 +8,5 @@ for(let i=0;i<arr.length;i++){
 return res
 }
 
-console.log(solve([3,3,3,5,5,2]))
+console.log(solve([2,3,5,3,7,9,5,3,7]))
+
