@@ -1,12 +1,11 @@
 const solve=(arr)=>{
-  let res={}
-for(let i=0;i<arr.length;i++){
-  if(!res[arr[i]]){
-    res[arr[i]]=0
-  }++res[arr[i]]
-}
-return res
+
+  result = { };
+  for(let i = 0; i < arr.length; ++i) {
+      if(!result[arr[i]])
+          result[arr[i]] = 0;
+      ++result[arr[i]];
+  }
 }
 
-console.log(solve([2,3,5,3,7,9,5,3,7]))
-
+console.log(solve([2,3,7,7,7,5,5,4]))
