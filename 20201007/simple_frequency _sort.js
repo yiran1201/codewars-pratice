@@ -9,18 +9,20 @@ const solve = (arr) => {
     }
   }
 
+
   // 2. convert frequency object to array
   const frequencies = [];
-  for (const num in result) { // 对于Object来说只能用For in loop来读key
+  for (const num in result) {
+    // 对于Object来说只能用For in loop来读key
     frequencies.push([num, result[num]]);
   }
 
   // 3. sort by frequency
-  const sortedFrequencies = frequencies.sort((a, b) => {
+  const sortedFrequencies = frequencies.sort((a, b) => { //比较[ '2', 1 ], [ '3', 3 ]
     if (a[1] > b[1]) return -1; // a[1]的frequency>b[1]frequency，把a放的更前
     return 0; // 位置不变
   });
-
+  console.log(sortedFrequencies)
   // 4. ...
   const finalResult = [];
   for (const pair of sortedFrequencies) {
