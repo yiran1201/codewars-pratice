@@ -54,3 +54,8 @@ function createCamelCaseAgeAnalyzer() {
     meanAge: () => analyzer.meanAge(),
   };
 }
+
+const ana = createCamelCaseAgeAnalyzer();
+console.log(ana.addUser('Bob', 18));
+console.log(ana.getAge('Bob'));
+console.log(ana.meanAge());
