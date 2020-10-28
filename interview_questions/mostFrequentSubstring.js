@@ -29,7 +29,7 @@ function mostFrequentSubstring(words, k) {
       maxString = key;
       maxFreq = cnt;
     }
-    console.log(Object.entries(countMap))
+
   }
   return maxString;
 }
