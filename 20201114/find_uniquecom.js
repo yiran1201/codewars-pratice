@@ -1,7 +1,4 @@
 /*
-1. 每个元素自己相加直到和=x,如果有记录为Comb
-2.两两元素相加，如果和=x,记录Comb，如果两元素不相同 记录（a b )(b a)
-3.
 
 input: arr = [1, 2, 3]
 #      	x =  4
@@ -35,7 +32,7 @@ input: arr = [1, 2, 3]
 //   3: [[1, 2], [1, 1, 1], [2, 1], [3]], //1+2+1=4
 // };
 
-const n = 5;
+const n = 3;
 const comboWays = {};
 for (let current = 1; current <= n; current++) {
   const ways = [[current]];

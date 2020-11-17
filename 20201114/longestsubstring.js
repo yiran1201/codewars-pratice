@@ -24,13 +24,13 @@ const longestSubstringLength = (s) => {
           delete visited[mapLetter];
         }
       }
-      console.log(`after: ${JSON.stringify(visited)}`);
+      //console.log(`after: ${JSON.stringify(visited)}`);
     }
     visited[letter] = i; // add current value and its index to visited
     if (i - start + 1 > longest.length) {
       //当前string 可以做出来的长度比之前的longest string长度要大
       longest = s.slice(start, i + 1);
-      // console.log(`longest: ${longest}`);
+      console.log(`longest: ${longest}`);
     }
     // console.log(visited);
   }
@@ -39,5 +39,6 @@ const longestSubstringLength = (s) => {
 //                                  01234
 // console.log(longestSubstringLength('abacb') === 3);
 // // console.log(longestSubstringLength('abacccefg') === 4);
-//                                       |
-console.log(longestSubstringLength('abacccebfg') === 5);
+// //                                       |
+// console.log(longestSubstringLength('abacccebfg') === 5);
+console.log(longestSubstringLength('aba') === 2);
