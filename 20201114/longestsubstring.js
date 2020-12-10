@@ -6,15 +6,16 @@
 */
 
 const longestSubstringLength = (s) => {
-  const visited = {};
-  let start = 0;
-  let longest = '';
+  const visited = {};//用MAP 去存储有效的字母
+  let start = 0;//指针设置从0开始
+  let longest = '';//最长的string用''记录
 
+  //在map里面放key value pair
   for (let i = 0; i < s.length; i++) {
     const letter = s[i];
 
     if (visited[letter] !== undefined) {
-      // 判断目前letter index是否出现过，如果出现，更新之前出现过的这个letter的index
+      // 判断目前letter index在map是否出现过，如果出现，更新之前出现过的这个letter的index
       const oldIndex = visited[letter];
       start = oldIndex + 1;
       // console.log(`before: ${JSON.stringify(visited)}`);

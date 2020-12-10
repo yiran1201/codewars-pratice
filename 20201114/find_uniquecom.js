@@ -48,4 +48,4 @@ for (let current = 1; current <= n; current++) {
   console.log('\n\n');
 }
 // console.log(comboWays);
-// console.log(comboWays[n].length);
+ console.log(comboWays[n].length);
